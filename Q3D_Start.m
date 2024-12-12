@@ -31,7 +31,7 @@ AC.Visc  = 1;              % 0 for inviscid and 1 for viscous analysis
 AC.Aero.MaxIterIndex = 150;    %Maximum number of Iteration for the
                                 %convergence of viscous calculation
                                 
-V = 150;
+V = 230;
 M = V / sqrt(1.4 * 287.15 * 217);
 % Flight Condition
 AC.Aero.V     = V;            % flight speed (m/s)
@@ -40,10 +40,10 @@ AC.Aero.alt   = 11277.6;             % flight altitude (m)
 AC.Aero.Re    = 1e7;        % reynolds number (bqased on mean aerodynamic chord)
 AC.Aero.M     = M;           % flight Mach number 
 % AC.Aero.CL    = 3;          % lift coefficient - comment this line to run the code for given alpha%
-AC.Aero.CL    = 0.4;          % lift coefficient - comment this line to run the code for given alpha%
+AC.Aero.CL    = 0.546;          % lift coefficient - comment this line to run the code for given alpha%
 % AC.Aero.Alpha = -4.29;             % angle of attack -  comment this line to run the code for given cl 
 
-
+save(fullfile('Q3D_plots_and_stuff/', 'AC.mat'), 'AC');
 %% 
 tic
 

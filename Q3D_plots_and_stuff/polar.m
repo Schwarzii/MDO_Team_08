@@ -1,5 +1,5 @@
 %%% Polar
-
+% Currently cannot compute Cl 0.7
 clear all
 CL=0:0.1:1;
 tic
@@ -11,7 +11,7 @@ figure
 plot(CL,CD,'bo')
 grid on
 
-save polardata
+save(fullfile('Q3D_plots_and_stuff/', 'polardata.mat'), 'polardata');
 
 %find CDmin and index at which this occurs
 [CDmin, index] = min(CD);
