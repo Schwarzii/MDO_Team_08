@@ -5,8 +5,10 @@ close all;
 clc;
 
 
-Au = [2 2 2 1 1];         %upper-surface Bernstein coefficients
-Al = [-4 -3 -2 -1 -1];    %lower surface Bernstein coefficients
+Au = [0.1963    0.1235    0.2849    0.0887    0.3375    0.1697    0.2773];         %upper-surface Bernstein coefficients
+Al = [ -0.1824   -0.1140   -0.4443    0.0703   -0.5026    0.0883   -0.0517
+];    %lower surface Bernstein coefficients
+
 
 X = linspace(0,1,99)';      %points for evaluation along x-axis
 

@@ -50,3 +50,4 @@ tic
 Res = Q3D_solver(AC);
 
 toc
+save(fullfile('Q3D_plots_and_stuff/', 'Res.mat'), 'Res');
