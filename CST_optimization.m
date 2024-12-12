@@ -2,6 +2,8 @@ close all;
 clc;
 clear all;
 
+addpath(genpath(fullfile(pwd, 'CST_files/'))); % adds CST stuff to another folder for better organization
+
 % This script shows the implementation of the CST airfoil-fitting
 % optimization of MDO Tutorial 1
 

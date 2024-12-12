@@ -29,5 +29,6 @@ CDplot = (k(2)+CDmin) + k(1)*(CL-CLmin).^2;
 %plot
 hold on
 plot (CL,CDplot,'-g');
+legend('Calculated Cl/Cd values', 'Fit of quadratic function')
 hold off
 

@@ -1,3 +1,5 @@
+addpath(genpath(fullfile(pwd, 'Airfoils/'))); % adds CST stuff to another folder for better organization
+
 data = load('A320-200_airfoil.dat'); % Replace 'filename.dat' with your file name
 
 sorted_data = sortrows(data, 1); % Sort by the first column

@@ -1,5 +1,8 @@
 function[error] = CST_objective(x)
 
+addpath(genpath(fullfile(pwd, 'CST_files/'))); % adds CST stuff to another folder for better organization
+
+
 %Determine upper and lower CST parameters from design-vector
  Au = x(1:length(x)/2);
  Al = x(length(x)/2+1:length(x));
